@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="theme-text">Light Mode</div>
+        <label class="switch">
+            <input type="checkbox" id="theme-switch">
+            <span class="slider round"></span>
+        </label>
+        <div class="theme-text">Dark Mode</div>
+    </div>
+    <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+            <path fill="#007BFF" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/>
+            <path fill="#007BFF" d="M7 9h10v2H7zm0 4h10v2H7z"/>
+        </svg>
+        <h2>WeatherPro</h2>
+    </div>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="input-section">
+            <input type="text" id="location-input" placeholder="Enter location">
+            <button id="fetch-weather">Get Weather</button>
+        </div>
+        <div class="weather-info">
+            <h2 id="location"></h2>
+            <i id="weather-icon" class="wi"></i>
+            <p id="description"></p>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+        </div>
+        <div id="error-message" class="error-message"></div>
+    </div>
+    <footer>
+        <a href="https://github.com/prath9mesh" target="_blank" aria-label="GitHub">
+            <svg height="30" viewBox="0 0 16 16" version="1.1" width="30" aria-hidden="true">
+                <path fill="#000" d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.6c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.2 1.87.86 2.33.65.07-.52.28-.86.51-1.06-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.03 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.64 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+            </svg>
+        </a>
+        <a href="https://linkedin.com/in/prathameshshirdhankar" target="_blank" aria-label="LinkedIn">
+            <svg height="30" viewBox="0 0 24 24" version="1.1" width="30" aria-hidden="true">
+                <path fill="#0077B5" d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.23 0zM7.09 20.45H3.56V8.94h3.53v11.51zM5.32 7.37a2.03 2.03 0 110-4.06 2.03 2.03 0 010 4.06zM20.45 20.45h-3.53v-5.68c0-1.35-.03-3.08-1.88-3.08-1.88 0-2.17 1.47-2.17 2.98v5.78h-3.53V8.94h3.39v1.58h.05c.47-.89 1.63-1.83 3.35-1.83 3.58 0 4.24 2.35 4.24 5.4v6.35z"></path>
+            </svg>
+        </a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
